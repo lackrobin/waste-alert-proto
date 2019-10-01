@@ -20,16 +20,16 @@ const App = () => {
   let data3={
     name: "Bern Banhof 3",
     types: ["Batteries", "Paper", "Glass", "Pet"],
-    full: [90, 40, 70, 50]
+    full: [90, 10, 10, 40]
   }
   let data4={
     name: "Bern Banhof 4",
     types: ["Batteries", "Paper", "Glass", "Pet"],
-    full: [90, 40, 70, 50]
+    full: [60, 40, 70, 50]
   }
   
   return (
-    <Grid container spacing={3}>
+    <Grid container spacing={1}>
         <Grid item xs={3}>
         <WasteCard data={data1}></WasteCard>
         </Grid>
@@ -43,14 +43,7 @@ const App = () => {
         <WasteCard data={data4}></WasteCard>
         </Grid>
       </Grid>
-
-        
-
-        
-
-        
-    
-  );
+   );
 };
 
 render(<App />, document.getElementById("root"));

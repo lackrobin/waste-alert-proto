@@ -9,15 +9,12 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from "@material-ui/core/styles";
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Grid from '@material-ui/core/Grid';
 import { Doughnut } from 'react-chartjs-2';
 
 const useStyles = makeStyles(theme => ({
     card: {
         maxWidth: 345,
-    },
-    media: {
-        height: 0,
-        paddingTop: '56.25%', // 16:9
     },
     expand: {
         transform: 'rotate(0deg)',
@@ -49,8 +46,7 @@ export const WasteCard = ({ data }) => {
             ]
         }],
         labels: [
-            'Full',
-            "Empty"
+
         ]
 
 
@@ -64,8 +60,20 @@ export const WasteCard = ({ data }) => {
                 <Typography variant="body2" color="textSecondary" component="p">
                     {data.types[0]}
                 </Typography>
-                <Button onClick={handleChartValue}>Add trash</Button>
-                <Doughnut data={chartData} />
+                <Grid container spacing={1}>
+                    <Grid item xs={6}>
+                        <Doughnut data={chartData} />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Doughnut data={chartData} />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Doughnut data={chartData} />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Doughnut data={chartData} />
+                    </Grid>
+                </Grid>
             </CardContent>
             <CardActions>
                 <IconButton
