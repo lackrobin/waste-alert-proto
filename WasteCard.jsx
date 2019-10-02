@@ -11,21 +11,20 @@ import RestorePageIcon from "@material-ui/icons/RestorePage";
 import LocalDrinkIcon from "@material-ui/icons/LocalDrink";
 import { WasteDonut } from "./WasteDonut";
 
-export const WasteCard = (data) => {
+export const WasteCard = ({data}) => {
   let data1 = { color: "#ffc107", full: "20", label: "Trash" };
   let data2 = { color: "#8bc34a", full: "40", label: "Batteries" };
   let data3 = { color: "#607d8b", full: "60", label: "Paper" };
   let data4 = { color: "#00bcd4", full: "80", label: "Bottles" };
 
-  console.log(data.data.name)
   return (
     <Card raised className="card">
       <CardContent>
         <Typography variant="body1" color="textPrimary" component="p">
-          {data.data.name}
+          {data.name}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          {data.data.type}
+          {data.type}
         </Typography>
         <Grid container spacing={1}>
           <Grid item xs={6}>
