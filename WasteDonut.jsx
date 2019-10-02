@@ -11,10 +11,6 @@ export const WasteDonut = ({ data }) => {
     setChartValue(parseInt(chartValue) + 1);
   };
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
-
   const chartData = {
     datasets: [
       {
