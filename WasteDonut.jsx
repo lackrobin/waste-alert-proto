@@ -7,7 +7,8 @@ export const WasteDonut = ({ data }) => {
   const [chartValue, setChartValue] = React.useState(data.full);
 
   const handleChartValue = () => {
-    setChartValue(chartValue + 1);
+      console.log(chartValue);
+    setChartValue(parseInt(chartValue) + 1);
   };
 
   const handleExpandClick = () => {
