@@ -8,19 +8,26 @@ import { MapCard } from "../MapCard";
 const App = () => {
   let data1 = {
     name: "Bern Banhof #1",
-    type: "recycle" 
+    type: "recycle", 
+    multipliers: [1,1.3,1.2,0.8]
   };
   let data2 = {
     name: "Inner City #1",
     type: "Trash" 
+    , 
+    multipliers: [2,1,1.1,0.3]
   };
   let data3 = {
     name: "Marzili Bahn #1",
     type: "recycle" 
+    , 
+    multipliers: [0.1,0.2,0.4,0.5]
   };
   let data4 = {
     name: "BFH #1",
     type: "recycle" 
+    , 
+    multipliers: [0.3,0.5,1.5,1]
   };
 
   return (

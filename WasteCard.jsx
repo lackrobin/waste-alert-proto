@@ -12,10 +12,16 @@ import LocalDrinkIcon from "@material-ui/icons/LocalDrink";
 import { WasteDonut } from "./WasteDonut";
 
 export const WasteCard = ({data}) => {
-  let data1 = { color: "#ffc107", full: "20", label: "Trash" };
-  let data2 = { color: "#8bc34a", full: "40", label: "Batteries" };
-  let data3 = { color: "#607d8b", full: "60", label: "Paper" };
-  let data4 = { color: "#00bcd4", full: "80", label: "Bottles" };
+    let full1 = `${data.multipliers[0] * 20}`; 
+    let full2 = `${data.multipliers[1] * 40}`; 
+    let full3 = `${data.multipliers[2] * 50}`; 
+    let full4 = `${data.multipliers[3] * 70}`; 
+
+
+  let data1 = { color: "#ffc107", full: full1, label: "Trash" };
+  let data2 = { color: "#8bc34a", full: full2, label: "Batteries" };
+  let data3 = { color: "#607d8b", full: full3, label: "Paper" };
+  let data4 = { color: "#00bcd4", full: full4, label: "Bottles" };
 
   return (
     <Card raised className="card">
