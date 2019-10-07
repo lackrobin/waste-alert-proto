@@ -2,8 +2,8 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 
 import { render } from "react-dom";
-import { WasteCard } from "../WasteCard";
-import { MapCard } from "../MapCard";
+import { WasteCard } from "./WasteCard";
+import { MapCard } from "./MapCard";
 
 const App = () => {
   let data1 = {

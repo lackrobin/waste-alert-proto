@@ -3,7 +3,6 @@ import { Doughnut } from "react-chartjs-2";
 
 
 export const WasteDonut = ({ data }) => {
-  const [expanded, setExpanded] = React.useState(false);
   const [chartValue, setChartValue] = React.useState(data.full);
 
   const handleChartValue = () => {
