@@ -12,8 +12,8 @@ import LocalDrinkIcon from "@material-ui/icons/LocalDrink";
 import { WasteDonut } from "./WasteDonut";
 
 export const WasteCard = ({data}) => {
-    let full1 = `${data.multipliers[0] * 20}`; 
-    let full2 = `${data.multipliers[1] * 40}`; 
+    let full1 = `${data.multipliers[0] * 40}`; 
+    let full2 = `${data.multipliers[1] * 100}`; 
     let full3 = `${data.multipliers[2] * 50}`; 
     let full4 = `${data.multipliers[3] * 70}`; 
 
