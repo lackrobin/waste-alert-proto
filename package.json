@@ -30,7 +30,7 @@
     "@types/googlemaps": "^3.37.7",
     "@types/markerclustererplus": "^2.1.33",
     "@types/react": "^16.9.5",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "react": "^16.10.2",
     "react-chartjs-2": "^2.8.0",
     "react-dom": "^16.10.2",
